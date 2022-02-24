@@ -23,8 +23,10 @@
 
 <br>
 
-<form form action="" method="post" >
+<form  action="{{ route('publicacion') }}" method="post" >
+
 @csrf
+
 <h1>Inicio de sesion</h1>
 <input type="text" name="usuario" id="" placeholder="Usuario"  ><br>
 {!! $errors->first('usuario', '<small>:message</small><br> ')!!}

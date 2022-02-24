@@ -14,9 +14,6 @@ Route::view('nuevoUser', 'nuevoUser')->name('nuevoUser');
 
 Route::post('home', [UserController::class, 'insertt'])->name('insertt');
 
+Route::view('publicacion', 'publicacion')->name('publicacion');
 
-// Route::post('publicacion', [SesionController::class, 'login'])->name('login');
-// Route::view('publicacion', 'publicacion')->name('publicaciones');
-
-Route::get('publicacion', [SesionController::class, 'ver'])->name('publicacion.ver');
-Route::post('publicacion', [SesionController::class, 'login'])->name('publicacion.login');
+Route::post('publicacion', [SesionController::class, 'login'])->name('publicacion');

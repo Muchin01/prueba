@@ -19,11 +19,6 @@ class SesionController extends Controller
     //     return 'Datos validados';
     // }
 
-    public function ver()
-    {
-
-        return  view('publicacion');
-    }
 
     public function login()
     {
